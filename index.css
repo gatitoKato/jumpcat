@@ -1,0 +1,116 @@
+body {
+    overflow: hidden;
+    background-image: url(space\ pixel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* #floor {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(blue, purple, violet);
+    bottom: 0;
+    left: 0;
+} */
+
+#player {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    bottom: 100px;
+    left: 140px;
+}
+
+.jump {
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 100px;
+    }
+    50%{
+        bottom: 450px;
+    }
+    100% {
+        bottom: 100px;
+    }
+}
+#enemy {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    bottom: 100px;
+    right: 0;
+
+    transform: translateX(100px);
+    animation-name: running;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+    @keyframes running {
+    0% {
+    right: 0;
+    transform: translateX(100px);
+}
+
+100% {
+    right: 100%;
+    transform: translateX(-100%);
+}
+}
+
+#overId {
+    margin: 0;
+    font-size: 90px;
+    text-align: center;
+    color: rgb(241, 224, 148);
+    font-weight: 900;
+  }
+  
+  
+  #result {
+    margin: 20px;;
+    font-size: 80px;
+    text-align: center;
+    color: rgb(207, 77, 44);
+    font-weight: bold;
+  }
+  
+  
+  #best {
+    margin: 20px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(161, 116, 245);
+  }
+  
+  
+  #retry {
+    text-decoration: underline;
+    margin: 30px;
+    font-size: 60px;
+    text-align: center;
+    color: aqua;
+  }
+
+  #audio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    
+
+  }
+
+  
